@@ -1,0 +1,45 @@
+/* Small custom styles */
+body {
+  background: #f8f9fa;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .6rem .75rem;
+  border-radius: .5rem;
+}
+
+.task-item:hover {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.btn-icon {
+  padding: .2rem .5rem;
+}
+
+.no-tasks {
+  color: #6c757d;
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+@media (max-width: 576px) {
+  .controls-row .col-auto {
+    flex: 1 1 100%;
+  }
+  .controls-row .input-group {
+    width: 100%;
+  }
+}
